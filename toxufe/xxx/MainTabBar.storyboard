@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="R7G-ZT-FGJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--问诊-->
+        <scene sceneID="4HD-ff-dnx">
+            <objects>
+                <viewController restorationIdentifier="Main" id="lNh-0H-roI" customClass="MainTabBarUIViewController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qED-v9-wpz"/>
+                        <viewControllerLayoutGuide type="bottom" id="7a0-qh-DR5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KwK-gX-Eem">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="问诊" id="cy4-t0-eaM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBO-eL-hUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766" y="-526"/>
+        </scene>
+        <!--问诊-->
+        <scene sceneID="rKP-5G-uJN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UKl-dB-M4h" customClass="wenzhen" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="问诊" image="wenzhen.png" id="15g-ED-toT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0q2-Uq-Aml">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="wenzhen" destination="15g-ED-toT" id="9VA-cs-K2t"/>
+                        <segue destination="lNh-0H-roI" kind="relationship" relationship="rootViewController" id="u2U-5S-DR6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tt0-Uq-Ufe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="-526"/>
+        </scene>
+        <!--就医-->
+        <scene sceneID="Wqt-mf-NzF">
+            <objects>
+                <viewController restorationIdentifier="jiuyi" id="Aw8-P7-tW2" customClass="MainTabBarUIViewController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vWq-zt-Cyh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Icj-YY-aQH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0g-nG-T4T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="就医" id="tZI-0n-vPR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4h-2i-Mmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="420"/>
+        </scene>
+        <!--Main Tab BarUI Tab Bar Controller-->
+        <scene sceneID="2Ot-7u-gVu">
+            <objects>
+                <tabBarController storyboardIdentifier="mainTabbar" automaticallyAdjustsScrollViewInsets="NO" id="R7G-ZT-FGJ" customClass="MainTabBarUITabBarController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Qjf-R3-KUe">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="UITabBarname" destination="Qjf-R3-KUe" id="dvJ-dg-cIe"/>
+                        <segue destination="UKl-dB-M4h" kind="relationship" relationship="viewControllers" id="wy1-IP-Gds"/>
+                        <segue destination="XhB-yP-RGi" kind="relationship" relationship="viewControllers" id="ibp-5p-Dqt"/>
+                        <segue destination="4Li-jc-RBa" kind="relationship" relationship="viewControllers" id="nMl-QL-iJ0"/>
+                        <segue destination="YVc-1z-CVQ" kind="relationship" relationship="viewControllers" id="btT-f2-i5h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Non-wi-5If" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="-2268"/>
+        </scene>
+        <!--健康养生-->
+        <scene sceneID="Jyp-Af-guZ">
+            <objects>
+                <viewController restorationIdentifier="jiankang" id="TFx-b4-TVa" customClass="MainTabBarUIViewController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rrF-JV-auC"/>
+                        <viewControllerLayoutGuide type="bottom" id="GFg-MD-Fcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3qg-LC-pgs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="健康养生" id="vYC-TV-SbA">
+                        <barButtonItem key="rightBarButtonItem" image="yangsheng.png" id="1tY-4C-trL" customClass="JianKangNav" customModule="xxx" customModuleProvider="target">
+                            <inset key="imageInsets" minX="5" minY="4" maxX="5" maxY="4"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AHh-XP-lkp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="-526"/>
+        </scene>
+        <!--账户-->
+        <scene sceneID="a3k-rJ-UwA">
+            <objects>
+                <viewController restorationIdentifier="Zhanghu" id="F6W-3A-D8b" customClass="MainTabBarUIViewController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0t5-0i-4a7"/>
+                        <viewControllerLayoutGuide type="bottom" id="EuY-Bp-Nak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j5G-ib-J6X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="账户" id="mKB-CM-6r7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjv-uf-Cld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="420"/>
+        </scene>
+        <!--就医-->
+        <scene sceneID="okB-qt-a7F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XhB-yP-RGi" customClass="jiuyi" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="就医" image="jiuyi.png" id="r3c-Dp-GiR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kve-xu-G3H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="jiuyi" destination="r3c-Dp-GiR" id="7pQ-Cd-KNN"/>
+                        <segue destination="Aw8-P7-tW2" kind="relationship" relationship="rootViewController" id="fCn-fY-nzJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3A-Ma-ffd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="420"/>
+        </scene>
+        <!--健康-->
+        <scene sceneID="ygZ-XA-aVE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Li-jc-RBa" customClass="jiankang" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="健康" image="jiankang.png" id="3Qn-ne-nqz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F6N-yJ-0nc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="jiankang" destination="3Qn-ne-nqz" id="1Ja-Th-Q4B"/>
+                        <segue destination="TFx-b4-TVa" kind="relationship" relationship="rootViewController" id="zBN-Jo-Dll"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54U-Rl-8q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="-526"/>
+        </scene>
+        <!--账户-->
+        <scene sceneID="Te6-Tp-RhJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YVc-1z-CVQ" customClass="zhanghu" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="账户" image="zhanghu.png" id="NUw-MG-0h3">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YTH-YX-zl0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="zhanghu" destination="NUw-MG-0h3" id="xvY-AL-xg4"/>
+                        <segue destination="F6W-3A-D8b" kind="relationship" relationship="rootViewController" id="fcS-PQ-R2x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZm-kO-Upa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="420"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jiankang.png" width="30" height="30"/>
+        <image name="jiuyi.png" width="30" height="30"/>
+        <image name="wenzhen.png" width="30" height="30"/>
+        <image name="yangsheng.png" width="32" height="32"/>
+        <image name="zhanghu.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hrc-l9-vWc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--登录 \ 注册-->
+        <scene sceneID="8hV-ds-dJc">
+            <objects>
+                <viewController storyboardIdentifier="loginRes" id="xz0-YG-8vh" customClass="LoginResViewController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehs-gz-aMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="dv7-TG-DgR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="ypw-z6-ACe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IUt-cl-48G">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dv7-TG-DgR" firstAttribute="top" secondItem="IUt-cl-48G" secondAttribute="bottom" id="9pa-B4-wuX"/>
+                            <constraint firstItem="IUt-cl-48G" firstAttribute="top" secondItem="ypw-z6-ACe" secondAttribute="topMargin" id="XDO-Az-tkp"/>
+                            <constraint firstItem="IUt-cl-48G" firstAttribute="leading" secondItem="ypw-z6-ACe" secondAttribute="leadingMargin" constant="-16" id="hce-7y-Izq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IUt-cl-48G" secondAttribute="trailing" constant="-16" id="wnc-K2-sZP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录 \ 注册" id="GhE-iM-JeD">
+                        <barButtonItem key="leftBarButtonItem" image="smLeft" id="Or2-zz-1xn">
+                            <inset key="imageInsets" minX="-2" minY="12" maxX="18" maxY="10"/>
+                            <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="returnMain:" destination="xz0-YG-8vh" id="eAO-YW-mSv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bgImage" destination="IUt-cl-48G" id="ux9-QK-5uf"/>
+                        <outlet property="titlename" destination="GhE-iM-JeD" id="h3D-Dy-bpH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lpi-cE-b5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="44"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MYU-qf-1PP">
+            <objects>
+                <navigationController storyboardIdentifier="denglu" automaticallyAdjustsScrollViewInsets="NO" id="Hrc-l9-vWc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OlQ-ws-I4J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xz0-YG-8vh" kind="relationship" relationship="rootViewController" id="apt-rc-xJg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8V-Rl-mNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smLeft" width="25" height="41"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

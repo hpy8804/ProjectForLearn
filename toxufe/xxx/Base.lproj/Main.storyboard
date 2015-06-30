@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBh-Mv-eqV">
+                                <rect key="frame" x="203" y="28" width="93" height="30"/>
+                                <state key="normal" title="个人信息">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goGerenxinxi:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="of5-LG-25a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KV9-A3-lji">
+                                <rect key="frame" x="101" y="28" width="94" height="30"/>
+                                <state key="normal" title="实名认证">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goShiming:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qgb-9y-oa4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVz-cs-ldE">
+                                <rect key="frame" x="101" y="66" width="94" height="30"/>
+                                <state key="normal" title="登录页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ug6-fu-E7U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-9o-5IY">
+                                <rect key="frame" x="0.0" y="66" width="93" height="30"/>
+                                <state key="normal" title="科室专家">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goKeshi:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BZz-90-dDj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlP-4B-m54">
+                                <rect key="frame" x="40" y="269" width="255" height="188"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="41i-C5-9pQ"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69G-Jx-Llp">
+                                <rect key="frame" x="145" y="459" width="30" height="30"/>
+                                <state key="normal" title="登出">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LogOut" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OHC-LW-spg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fv3-yJ-foq">
+                                <rect key="frame" x="115" y="508" width="90" height="30"/>
+                                <state key="normal" title="获取网络状态">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getNetwork" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oxG-G0-f2v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A54-dc-d0r">
+                                <rect key="frame" x="16" y="546" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foy-7B-WaR">
+                                <rect key="frame" x="0.0" y="28" width="93" height="30"/>
+                                <state key="normal" title="健康养生">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goYangsheng:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zrp-bb-bMh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hed-UM-22W">
+                                <rect key="frame" x="203" y="66" width="93" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eBh-Mv-eqV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="7Ab-hq-idj"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="width" secondItem="eBh-Mv-eqV" secondAttribute="width" id="7dE-rV-Cv3"/>
+                            <constraint firstItem="Fv3-yJ-foq" firstAttribute="top" secondItem="69G-Jx-Llp" secondAttribute="bottom" constant="19" id="8Yb-ne-ou5"/>
+                            <constraint firstItem="hVz-cs-ldE" firstAttribute="top" secondItem="KV9-A3-lji" secondAttribute="bottom" constant="8" id="8o1-vV-bbU"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="height" secondItem="KV9-A3-lji" secondAttribute="height" id="9CJ-Gh-3hl"/>
+                            <constraint firstItem="KV9-A3-lji" firstAttribute="leading" secondItem="Foy-7B-WaR" secondAttribute="trailing" constant="8" id="9Dg-eJ-Ci1"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="height" secondItem="bAs-9o-5IY" secondAttribute="height" id="9gK-Ik-1J7"/>
+                            <constraint firstItem="eBh-Mv-eqV" firstAttribute="leading" secondItem="KV9-A3-lji" secondAttribute="trailing" constant="8" id="AR0-pi-Xr9"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="width" secondItem="bAs-9o-5IY" secondAttribute="width" id="Fyj-PT-5Rj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eBh-Mv-eqV" secondAttribute="trailing" constant="8" id="HMq-YW-hvS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hed-UM-22W" secondAttribute="trailing" constant="8" id="J5k-4c-ne2"/>
+                            <constraint firstItem="Fv3-yJ-foq" firstAttribute="centerX" secondItem="69G-Jx-Llp" secondAttribute="centerX" id="KHC-oz-Dpe"/>
+                            <constraint firstItem="A54-dc-d0r" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="PoG-LB-J35"/>
+                            <constraint firstItem="bAs-9o-5IY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Pxw-LO-CNQ"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Qo3-fh-hzc"/>
+                            <constraint firstItem="A54-dc-d0r" firstAttribute="top" secondItem="Fv3-yJ-foq" secondAttribute="bottom" constant="8" id="RTg-KK-1yd"/>
+                            <constraint firstItem="69G-Jx-Llp" firstAttribute="top" secondItem="WlP-4B-m54" secondAttribute="bottom" constant="2" id="RdU-1S-vrX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WlP-4B-m54" secondAttribute="trailing" constant="9" id="TYH-SI-32D"/>
+                            <constraint firstItem="hVz-cs-ldE" firstAttribute="leading" secondItem="bAs-9o-5IY" secondAttribute="trailing" constant="8" id="Ty9-sc-iT1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WlP-4B-m54" secondAttribute="bottom" constant="111" id="V1o-aP-COT"/>
+                            <constraint firstItem="hed-UM-22W" firstAttribute="top" secondItem="eBh-Mv-eqV" secondAttribute="bottom" constant="8" id="VmH-oP-nDc"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="height" secondItem="eBh-Mv-eqV" secondAttribute="height" id="YN5-RQ-xa8"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="ZKq-DI-Ep7"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="height" secondItem="hVz-cs-ldE" secondAttribute="height" id="aPY-6R-U45"/>
+                            <constraint firstItem="WlP-4B-m54" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="dVB-al-Ow9"/>
+                            <constraint firstItem="69G-Jx-Llp" firstAttribute="centerX" secondItem="WlP-4B-m54" secondAttribute="centerX" constant="-7.5" id="e4v-TW-luv"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="height" secondItem="hed-UM-22W" secondAttribute="height" id="ej7-r4-Wg9"/>
+                            <constraint firstItem="A54-dc-d0r" firstAttribute="centerX" secondItem="Fv3-yJ-foq" secondAttribute="centerX" id="gJq-ya-8Nt"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="width" secondItem="hVz-cs-ldE" secondAttribute="width" id="hWd-Ng-Ebr"/>
+                            <constraint firstItem="KV9-A3-lji" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="lS7-jT-7uz"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="width" secondItem="KV9-A3-lji" secondAttribute="width" id="t69-Eg-BcV"/>
+                            <constraint firstItem="hed-UM-22W" firstAttribute="leading" secondItem="hVz-cs-ldE" secondAttribute="trailing" constant="8" id="vY7-5o-8wX"/>
+                            <constraint firstItem="Foy-7B-WaR" firstAttribute="width" secondItem="hed-UM-22W" secondAttribute="width" id="wA5-LA-dEK"/>
+                            <constraint firstItem="bAs-9o-5IY" firstAttribute="top" secondItem="Foy-7B-WaR" secondAttribute="bottom" constant="8" id="zfz-8o-YJN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xEN-N6-yP2"/>
+                    <connections>
+                        <outlet property="netWorkLable" destination="A54-dc-d0r" id="BFw-5K-wVE"/>
+                        <outlet property="textNeirong" destination="WlP-4B-m54" id="Xoe-tO-4X3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="312"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

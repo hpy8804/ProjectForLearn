@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mav-R9-EM2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Keshi Table View Controller-->
+        <scene sceneID="bJn-3z-1Xz">
+            <objects>
+                <tableViewController storyboardIdentifier="keshi" id="mav-R9-EM2" customClass="keshiTableViewController" customModule="xxx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JD6-dq-LuW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="mdS-EK-cuM">
+                            <rect key="frame" x="0.0" y="64" width="320" height="436"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我是科室页面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2m-d6-QyY">
+                                    <rect key="frame" x="8" y="185" width="304" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.86880017200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <connections>
+                            <outlet property="dataSource" destination="mav-R9-EM2" id="Q6g-28-8Vr"/>
+                            <outlet property="delegate" destination="mav-R9-EM2" id="iLz-uH-zzu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DdE-bv-JPX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pst-dt-5wY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S48-cx-zur">
+            <objects>
+                <navigationController storyboardIdentifier="hello" automaticallyAdjustsScrollViewInsets="NO" id="8RN-zO-AoU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fwe-W7-FIt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mav-R9-EM2" kind="relationship" relationship="rootViewController" id="Qob-4l-Dbi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7E-Sq-PzC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="189"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

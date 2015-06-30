@@ -1,0 +1,4 @@
+platform :ios, '8.0'
+pod 'Alamofire', '~> 1.2'
+pod 'IJReachability', :git => 'https://github.com/Isuru-Nanayakkara/IJReachability.git'
+use_frameworks!

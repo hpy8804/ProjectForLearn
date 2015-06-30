@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (1.2.2)
+  - IJReachability (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.2)
+  - IJReachability (from `https://github.com/Isuru-Nanayakkara/IJReachability.git`)
+
+EXTERNAL SOURCES:
+  IJReachability:
+    :git: https://github.com/Isuru-Nanayakkara/IJReachability.git
+
+CHECKOUT OPTIONS:
+  IJReachability:
+    :commit: da69c8f4bed9f82203bb49180fb36091b4cd0d28
+    :git: https://github.com/Isuru-Nanayakkara/IJReachability.git
+
+SPEC CHECKSUMS:
+  Alamofire: 11a6022f5089887d92ffb5a3014c97a0a915ab98
+  IJReachability: 3eff33caca50869df09b257bcf712031a56a8575
+
+COCOAPODS: 0.37.1
